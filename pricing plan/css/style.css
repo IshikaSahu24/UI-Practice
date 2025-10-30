@@ -1,0 +1,98 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    background-color: rgb(20, 20, 36);
+    font-family: "Open Sans", sans-serif;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.header{
+    text-align: center;
+}
+.header h1{
+    padding-bottom: 10px;
+}
+h1{
+    font-size: 40px;
+    padding: 20px 0px;
+}
+.hero-area{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px 20px;
+}
+hr{
+    background-color: gray;
+}
+.card{
+    width: 24%;
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    align-items: self-start;
+    flex-direction: column;
+    justify-content: center;
+}
+.head{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 5px 30px 5px;
+}
+.main-area{
+    padding: 20px 5px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.main-area ul li{
+    margin-left: 20px;
+    padding: 5px;
+    color: rgb(185, 183, 183);
+}
+p{
+    color: rgb(185, 183, 183);
+}
+.main-area a{
+    text-decoration: none;
+    padding: 5px 15px;
+    border: 2px solid grey;
+    border-radius: 5px;
+    width:80%;
+    text-align: center;
+    color: grey;
+    align-self: center;
+}
+
+.bg, .bg div, .bg li, .bg > div>*{
+    background-color: rgb(28, 28, 57);
+}
+.bg-g{
+background: radial-gradient(circle,rgba(224, 58, 166, 0.86) 0%, rgba(165, 87, 199, 1) 50%, rgba(128, 99, 216, 1) 82%, rgba(125, 100, 217, 1) 71%, rgba(83, 114, 237, 0.86) 100%);
+}
+
+.bg-g  a{
+    background-color: white;
+    color: rgb(27, 25, 25);
+    border: 2px solid white;
+
+}
+
+@media (min-width: 100px) and (max-width:680px){
+    .hero-area{
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .card{
+        width: 100%;
+    }
+}
